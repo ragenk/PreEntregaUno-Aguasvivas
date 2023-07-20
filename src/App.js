@@ -9,7 +9,6 @@ import MonoImg from "./img/mono.jpg"
 function App() {
     return (
         <div>
-
             <section className="hero is-info">
                 <div className="hero-body">
                     <h1 className="title has-text-centered">JairolArt Shop</h1>
@@ -18,28 +17,24 @@ function App() {
             <div>
                 <NavBar />
             </div>
-
-            <div className="container">
-                
+            <div className="container">                
                 <div>
                     <ItemListContainer greeting="¡Bienvenidos a mi tienda!" />
                 </div>
-
                 <div className="section">
                     <div className="columns">                        
                         <div className="column is-4">
-                            <ProductCard title="Heart Replica" description="Replica de corazon hecho con resina." image={HeartImg}/>
+                            <ProductCard title="Heart Replica" description="Replica de corazon hecho con resina." image={HeartImg} precio="$200.00"/>
                         </div>
                         <div className="column is-4">
-                            <ProductCard title="The Mask" description="Replica de La Mascara" image={MaskImg}/>
+                            <ProductCard title="The Mask" description="Replica de La Mascara" image={MaskImg} precio="$250.00"/>
                         </div>
                         <div className="column is-4">
-                            <ProductCard title="Mono NFT" description="Escultura en tamaño real de Mono NFT" image={MonoImg}/>
+                            <ProductCard title="Mono NFT" description="Escultura en tamaño real de Mono NFT" image={MonoImg} precio="$1,500.00"/>
                         </div>
                     </div>
                 </div>
             </div>
-
         </div>
     );    
 }
