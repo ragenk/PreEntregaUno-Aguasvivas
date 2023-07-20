@@ -1,5 +1,5 @@
 import NavBar from './components/NavBar/NavBar'
-import ProfileCard from './components/ProfileCard/ProfileCard'
+import ProductCard from './components/ProductCard/ProductCard'
 import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 import "bulma/css/bulma.css"
 import HeartImg from "./img/heart.jpg"
@@ -25,16 +25,16 @@ function App() {
                     <ItemListContainer greeting="¡Bienvenidos a mi tienda!" />
                 </div>
 
-                <div className="section">                    
+                <div className="section">
                     <div className="columns">                        
                         <div className="column is-4">
-                            <ProfileCard title="Heart Replica" description="Replica de corazon hecho con resina." image={HeartImg}/>
+                            <ProductCard title="Heart Replica" description="Replica de corazon hecho con resina." image={HeartImg}/>
                         </div>
                         <div className="column is-4">
-                            <ProfileCard title="The Mask" description="Replica de La Mascara" image={MaskImg}/>
+                            <ProductCard title="The Mask" description="Replica de La Mascara" image={MaskImg}/>
                         </div>
                         <div className="column is-4">
-                            <ProfileCard title="Mono NFT" description="Escultura en tamaño real de Mono NFT" image={MonoImg}/>
+                            <ProductCard title="Mono NFT" description="Escultura en tamaño real de Mono NFT" image={MonoImg}/>
                         </div>
                     </div>
                 </div>

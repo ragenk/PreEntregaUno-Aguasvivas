@@ -1,6 +1,6 @@
 
 
-function ProfileCard({title, description, image}){
+function ProductCard({title, description, image}){
 
     return (
         
@@ -25,4 +25,4 @@ function ProfileCard({title, description, image}){
 
 }
 
-export default ProfileCard
+export default ProductCard
